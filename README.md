@@ -18,9 +18,9 @@ built as a full-stack case study.
 
 | | URL |
 |---|---|
-| Frontend | _fill in after deploying — see docs/DEPLOYMENT.md_ |
-| Backend API | _fill in after deploying — see docs/DEPLOYMENT.md_ |
-| GitHub repo | _fill in after `git push`_ |
+| Frontend | https://mini-erp-crm-portal-mu.vercel.app |
+| Backend API | https://mini-erp-crm-portal-knw8.onrender.com/api |
+| GitHub repo | https://github.com/meananyasingh/Mini-ERP-CRM-Portal |
 
 ## Test credentials
 
