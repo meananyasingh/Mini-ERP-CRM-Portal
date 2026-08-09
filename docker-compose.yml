@@ -1,0 +1,23 @@
+# Local development convenience only — spins up a throwaway PostgreSQL
+# instance so you don't have to install Postgres natively. Not used in
+# deployment (Neon/Supabase/Render Postgres are used there instead).
+#
+# Usage: docker compose up -d
+# Then point backend/.env DATABASE_URL at:
+#   postgres://erp_user:erp_password@localhost:5432/erp_crm
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: erp-crm-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: erp_user
+      POSTGRES_PASSWORD: erp_password
+      POSTGRES_DB: erp_crm
+    ports:
+      - "5432:5432"
+    volumes:
+      - erp_crm_pgdata:/var/lib/postgresql/data
+
+volumes:
+  erp_crm_pgdata:
