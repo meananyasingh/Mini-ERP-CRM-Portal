@@ -128,9 +128,3 @@ stock-transaction logic, and why certain design choices were made (e.g.
 See [`docs/ASSUMPTIONS.md`](docs/ASSUMPTIONS.md) — covers the role
 permission matrix (not fully specified by the brief), what "cancel" does to
 stock, and what was intentionally left out of scope for the 48-hour window.
-
-## Screen recording
-
-_If this is submitted without a live deployment, place a screen-recording
-link here showing: login as each role, full customer → product → challan →
-confirm → PDF flow, and the insufficient-stock error case._
